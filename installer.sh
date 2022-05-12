@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# install dependencies
+echo "Installing dependencies"
+composer install
+
 # ask for webhook url
 echo "Enter webhook url:"
 read webhook_url
@@ -22,3 +26,5 @@ crontab /tmp/cron_bkp
 
 # remove backup
 rm /tmp/cron_bkp
+
+echo "Installation complete."
