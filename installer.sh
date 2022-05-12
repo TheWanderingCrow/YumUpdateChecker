@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# ask for webhook url
+echo "Enter webhook url:"
+read webhook_url
+
+# generate .env file
+echo "Generating .env file..."
+echo "SLACK_CHANNEL_HOOK_INFO=$webhook_url" > .env
+
 # create backup of crontab
 crontab -l > /tmp/cron_bkp
 
