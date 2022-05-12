@@ -24,7 +24,6 @@ $infolog->pushHandler(new SlackWebhookHandler(
 $output = shell_exec("yum updateinfo");
 $updatecount = intval(shell_exec("yum updateinfo list updates | wc -l"))-2; // -2 because of the header and footer
 
-print($updatecount . "\n");
 
 /*
 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
