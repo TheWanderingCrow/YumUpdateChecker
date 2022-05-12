@@ -6,6 +6,6 @@ php_path=$(which php)
 # get pwd
 pwd=$(pwd)
 
-cd $pwd/updat0r
+cd $pwd/YumUpdateChecker
 
 $php_path updat0r.php &
