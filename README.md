@@ -1,6 +1,6 @@
 # YumUpdateChecker
 
 ## Installation instructions
-* `./installer.sh`
+* `composer install` & `./installer.sh`
 * Enter your webhook url
 * Finished

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# install dependencies
-echo "Installing dependencies"
-composer install
-
 # ask for webhook url
 echo "Enter webhook url:"
 read webhook_url
